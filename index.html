@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Calculadora de edad</title>
+</head>
+
+<body>
+    <div class="contenedor">
+        <form>
+            <div class="base">
+                <div class="enter">
+                    <h2>Calculadora de edad</h2>
+                </div>
+                <div class="bloque">
+                    <p class="titulo">Dia</p>
+                    <input type="text" name="dia" id="dia" placeholder="dd" required="required" minlength="1"
+                        maxlength="2" />
+                </div>
+                <div class="bloque">
+                    <p class="titulo">Mes</p>
+                    <input type="text" name="mes" id="mes" placeholder="mm" required="required" minlength="1"
+                        maxlength="2" />
+                </div>
+                <div class="bloque">
+                    <p class="titulo">Año</p>
+                    <input type="text" name="año" id="año" placeholder="aaaa" required="required" minlength="4"
+                        maxlength="4" />
+                </div>
+            </div>
+            <div class="base">
+                <div class="boton">
+                    <input type="button" name="botonCalcular" value="Calcular" onclick="resultado()" />
+                </div>
+            </div>
+            <div id="resultado"></div>
+        </form>
+    </div>
+
+</body>
+<script src="scripts.js"></script>
+
+</html>
